@@ -1,12 +1,15 @@
+#Importing the random module
 import random
 
+#Defining the function called intro
 def intro():
     print("___Game Overview___")
     print("First, you need to select a on from Rock, Paper and Scissor")
     print("At the same time, computer also select one from them.")
     print("You have 10 scores at the begining and you loose two scores for each lose and gain 2 marks for each win. :)")
     print("Let's start the game")
-    
+
+#Defining the function called begin
 def begin():
         words=["Rock","Paper","Scissor"]
         Uchoice=str(input("Type your choice (Rock or Paper or Scissor) : "))
@@ -14,6 +17,7 @@ def begin():
             rand=random.choice(words)
             print(rand)
 
+#Defining the function called comparison
 def comparison(rand,Uchoice):
     if rand==Uchoice:
         print("Equal")
@@ -48,6 +52,7 @@ def comparison(rand,Uchoice):
     else:
         print("Invalid Input")
 
+#Defining the function called leave
 def leave():
     left=str(input("Do you want to play again? (Y/N) "))
     if left=="Y" or "y" or "Yes" or "yes":
